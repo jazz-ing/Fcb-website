@@ -16,8 +16,29 @@
             .center{
                 text-align:center;
             }
-            #underbar{
-                
+            body{ margin:0; }
+            .up, .down{
+                background:#f2f2f2;
+                padding:15px 30px;
+                color:#70757A;
+            }
+            .up{
+                text-align:left;
+                border-bottom:0.5px solid #DADCE0;
+            }
+            .down { 
+                display:flex;
+                word-spacing:30px;
+                font-size:90%;
+            }
+            .left { 
+                flex:1;
+                text-align:left;
+            }
+            .center { flex:2;}
+            .right { 
+                flex:1;
+                text-align:right;
             }
         </style>
     </head>
@@ -32,8 +53,11 @@
             <br>
             <input type="button" value="  Google 검색  " onclick="location.href='https://www.google.com/'"> &nbsp; <input type="button" value="  I'm Feeling Lucky" onclick="location.href='https://www.google.com/doodles/'">
         </div>
-        <div id="underbar">
-
+        <div class="up">대한민국</div>
+        <div class="down">
+            <div class="left">Google정보 광고 비즈니스 검색의원리</div>
+            <div class="center"> </div>
+            <div class="right">개인정보처리방침 약관 설정</div>
         </div>
     </body>
 </html>
