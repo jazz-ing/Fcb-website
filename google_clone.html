@@ -13,7 +13,11 @@
                 text-align:right;
                 white-space: pre;
             }
-            .center{
+            .container{
+                position:relative;
+                
+            }
+            .search{
                 text-align:center;
             }
             body{ margin:0; }
@@ -25,18 +29,24 @@
             .up{
                 text-align:left;
                 border-bottom:0.5px solid #DADCE0;
+                position:fixed;
+                bottom:49px;
+                width:100%;
             }
-            .down { 
+            .down {
                 display:flex;
                 word-spacing:30px;
                 font-size:90%;
+                position:fixed;
+                bottom:0;
+                width:100%;
             }
-            .left { 
+            .left {
                 flex:1;
                 text-align:left;
             }
             .center { flex:2;}
-            .right { 
+            .right {
                 flex:1;
                 text-align:right;
             }
@@ -46,12 +56,14 @@
         <div>
             <a href="https://mail.google.com/mail/u/0/?tab=wm&ogbl#inbox">Gmail</a>   <a href="https://www.google.co.kr/imghp?hl=en&tab=wi&ogbl">이미지</a>
         </div>
-        <div class="center">
-            <img src="google logo.png" width="18%">
-            <br>
-            <input type="search" name="googlesearch">
-            <br>
-            <input type="button" value="  Google 검색  " onclick="location.href='https://www.google.com/'"> &nbsp; <input type="button" value="  I'm Feeling Lucky" onclick="location.href='https://www.google.com/doodles/'">
+        <div class="container">
+            <div class="search">
+                <img src="google logo.png" width="18%">
+                <br>
+                <input type="search" name="googlesearch">
+                <br>
+                <input type="button" value="  Google 검색  " onclick="location.href='https://www.google.com/'"> &nbsp; <input type="button" value="  I'm Feeling Lucky" onclick="location.href='https://www.google.com/doodles/'">
+            </div>
         </div>
         <div class="up">대한민국</div>
         <div class="down">
